@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Feedback">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/name"
+            android:drawableLeft="@drawable/ic_person_black_24dp"
+            android:drawableTint="#0DA1CE"
+            android:hint="Name"
+            android:inputType="textPersonName"
+            android:textSize="20dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/email"
+            android:drawableLeft="@drawable/ic_email_black_24dp"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:textSize="20dp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/mobile"
+                android:drawableLeft="@drawable/ic_phone_android_black_24dp"
+                android:hint="Mobile Number"
+                android:inputType="phone"
+                android:textSize="20dp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/feedback"
+                android:drawableLeft="@drawable/ic_feedback_black_24dp"
+                android:hint="Feedback"
+                android:inputType="textAutoCorrect"
+                android:textSize="20dp" />
+
+            <com.hsalf.smilerating.SmileRating
+                android:id="@+id/smile_rating"
+                android:layout_marginTop="10dp"
+                app:angryColor="#b85677"
+                android:outlineSpotShadowColor="@color/yellow"
+                android:outlineAmbientShadowColor="@color/orange"
+                app:drawingColor="#427fed"
+                app:normalColor="#f4b400"
+                app:placeHolderBackgroundColor="@color/gradStart"
+                app:placeHolderSmileColor="@color/yellow"
+                app:textSelectionColor="@color/orange"
+                app:textNonSelectionColor="@color/gradStop"
+                android:layout_width="300dp"
+                app:showLine="true"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content" />
+            <com.spark.submitbutton.SubmitButton
+                android:layout_width="80dp"
+                android:layout_height="20dp"
+                android:id="@+id/submit"
+                android:layout_gravity="center"
+                android:text="Submit"
+                android:textSize="13dp"
+                android:textColor="@color/gray"
+                app:sub_btn_background="@color/yellow"
+                app:sub_btn_line_color="@color/gradStart"
+                app:sub_btn_ripple_color="@color/gradStart"
+                app:sub_btn_tick_color="@color/yellow"
+                app:sub_btn_duration="3000"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

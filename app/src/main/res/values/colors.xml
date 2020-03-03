@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#03A9F4</color>
+    <color name="colorPrimaryDark">#0288D1</color>
+    <color name="colorAccent">#48CFAD</color>
+    <color name="colorIndivateTab">#FFFFFF</color>
+    <color name="transparent">#00000000</color>
+    <color name="colorCardView">#f7f7f7</color>
+    <color name="grey_200">#EEEEEE</color>
+    <color name="grey_500">#a4a4a4</color>
+    <color name="grey_100">#F5F5F5</color>
+    <color name="grey_800">#212121</color>
+    <color name="starblue">#09df86</color>
+    <color name="white">#FFFFFF</color>
+    <color name="gradStart">#19AA88</color>
+    <color name="gradStop">#23A7D8</color>
+
+    <!-- Colours for SmoothProgressBar -->
+    <color name="gplus_color_1">#3e802f</color>
+    <color name="gplus_color_2">#f4b400</color>
+    <color name="gplus_color_3">#427fed</color>
+    <color name="gplus_color_4">#b23424</color>
+
+    <color name="orange">#f56342</color>
+    <color name="lightyellow">#e6f542</color>
+    <color name="color1">#dbcea2</color>
+    <color name="color2">#71e65a</color>
+
+    <color name="color3">#92e8e4</color>
+    <color name="color4">#885ab0</color>
+    <color name="color5">#b85677</color>
+    <color name="color6">#b356b8</color>
+
+
+    <integer-array name="gplus_colors">
+        <item>@color/gplus_color_1</item>
+        <item>@color/gplus_color_2</item>
+        <item>@color/gplus_color_3</item>
+        <item>@color/gplus_color_4</item>
+    </integer-array>
+
+    <!-- IntroScreen background color-->
+    <color name="bg_slider_screen1">#f4b241</color>
+    <color name="bg_slider_screen2">#16bc7d</color>
+    <color name="bg_slider_screen3">#203d8c</color>
+    <!-- dots inactive colors -->
+    <color name="dot_inactive_screen1">#ffa000</color>
+    <color name="dot_inactive_screen2">#008c57</color>
+    <color name="dot_inactive_screen3">#0e1e49</color>
+    <color name="dot_inactive_screen4">#0a80d1</color>
+    <!-- dots active colors -->
+    <color name="dot_active_screen1">#f9c772</color>
+    <color name="dot_active_screen2">#74f7c5</color>
+    <color name="dot_active_screen3">#3a67e0</color>
+    <color name="dot_active_screen4">#334353</color>
+    <array name="array_dot_active">
+        <item>@color/dot_active_screen4</item>
+        <item>@color/dot_active_screen4</item>
+        <item>@color/dot_active_screen4</item>
+        <item>@color/dot_active_screen4</item>
+    </array>
+    <array name="array_dot_inactive">
+        <item>@color/dot_inactive_screen4</item>
+        <item>@color/dot_inactive_screen4</item>
+        <item>@color/dot_inactive_screen4</item>
+        <item>@color/dot_inactive_screen4</item>
+    </array>
+
+</resources>

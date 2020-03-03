@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:id="@+id/contentRoot"
+    xmlns:emojicon="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorIndivateTab">
+    
+
+    
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerChat"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bottom_container">
+
+    </android.support.v7.widget.RecyclerView>
+    <LinearLayout
+        android:id="@+id/bottom_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/file_upload_container"
+            android:layout_width="match_parent"
+            android:visibility="gone"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/file_upload_status_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="3dp"
+                android:text="Sending File...."
+                android:textSize="12sp" />
+
+            <fr.castorflex.android.smoothprogressbar.SmoothProgressBar
+                android:id="@+id/upload_progressbar"
+                style="@style/GNowProgressBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:indeterminate="true" />
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey_200" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/btnAdd"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_vertical"
+                android:background="#00000000"
+                android:src="@drawable/ic_add_black_24dp" />
+            <ImageButton
+                android:id="@+id/btnSend1"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true"
+                android:background="#00000000"
+                android:padding="10dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/smiley"
+                android:layout_gravity="center"
+                android:layout_alignParentLeft="true" />
+
+            <EditText
+                android:id="@+id/editWriteMessage"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/edittext_boder"
+                android:drawablePadding="20dp"
+                android:inputType="textLongMessage"
+                android:maxLines="1"
+                android:hint="Type a message"
+                android:paddingLeft="7dp"
+                android:paddingRight="7dp"
+                android:textColorHint="#090909"
+                android:textSize="15sp"
+                tools:ignore="Autofill" />
+            <com.rockerhieu.emojicon.EmojiconEditText
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@+id/editWriteMessage"
+                android:visibility="gone"
+                android:id="@+id/editEmojicon"/>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_below="@+id/editEmojicon"
+                android:layout_alignParentBottom="true"
+                android:visibility="gone"
+                android:id="@+id/emojicons"/>
+
+            <ImageButton
+                android:id="@+id/btnCamera"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center_vertical"
+                android:background="#00000000"
+                android:padding="2dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_camera_alt_black_24dp"
+                tools:ignore="ContentDescription" />
+            <ImageButton
+                android:id="@+id/btnSend"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center_vertical"
+                android:background="#00000000"
+                android:padding="2dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_send"
+                tools:ignore="ContentDescription" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
